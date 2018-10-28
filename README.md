@@ -51,3 +51,24 @@ $ ionic cordova plugin add ../videoCordovaPluginTwilioVideo --nofetch
 $ ionic cordova platform rm android  
 $ ionic cordova platform add android@6.4.0
 ```
+
+## Using the plugin
+This is an example of using the plugin in a screen.
+```
+import statements;
+
+declare var cordova: any;
+
+@IonicPage()
+@Component({
+  selector: 'page-some',
+  templateUrl: 'some.html',
+})
+export class SomePage {
+...
+  joinCall(twilio_room, participant_token) {
+    cordova.videoconversation.open(twilio_room, participant_token );  
+  }
+...
+}
+```
