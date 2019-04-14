@@ -29,7 +29,7 @@ Next, you will need to open your project's Linked Frameworks and Libraries confi
 
 In your Build Settings, you will also need to modify "Other Linker Flags" to include -ObjC.
 
-![xcode settings](https://relieftelemed.com/assets/img/twilio_xcode_settings.png)
+![xcode settings](https://relieftelemed.com/assets/images/twilio_xcode_settings.png)
 
 Before distributing your app to the  App Store, you will need to strip the simulator binaries from the embedded framework. Navigate to your target's Build Phases screen and create a new "Run Script Phase". Ensure that this new run script phase is after the Embed Frameworks phase. Paste the following command in the script text field:
 ```
